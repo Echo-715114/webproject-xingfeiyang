@@ -124,6 +124,8 @@
             <div class="swiper-slide"><img src="swiper-imgs/c919_1.jpg" alt="C919大飞机"><div class="wy-cap"><h3>C919 大飞机</h3><p>2023 年商业首航 · 国产干线客机翱翔蓝天</p></div></div>
             <div class="swiper-slide"><img src="swiper-imgs/fendouzhe_1.jpg" alt="奋斗者号"><div class="wy-cap"><h3>奋斗者号</h3><p>10909 米 · 触碰地球第四极马里亚纳海沟</p></div></div>
             <div class="swiper-slide"><img src="swiper-imgs/fast_1.jpg" alt="中国天眼"><div class="wy-cap"><h3>中国天眼 FAST</h3><p>500 米口径 · 世界最大单口径射电望远镜</p></div></div>
+            <!-- 任务三①：第六件作品「爱达·魔都号」，首图由 AI 生成（横版 16:9） -->
+            <div class="swiper-slide"><img src="swiper-imgs/aidu_1.jpg" alt="爱达·魔都号"><div class="wy-cap"><h3>爱达·魔都号</h3><p>2024 年 1 月首航 · 首艘国产大型邮轮（首图 AI 生成）</p></div></div>
           </div>
         </div>
       </div>
@@ -152,6 +154,8 @@
             <div class="swiper-slide"><img src="swiper-imgs/c919_1.jpg" alt="C919大飞机"><div class="wy-cap"><h3>C919 大飞机</h3><p>让中国人的大飞机梦照进现实</p></div></div>
             <div class="swiper-slide"><img src="swiper-imgs/fendouzhe_1.jpg" alt="奋斗者号"><div class="wy-cap"><h3>奋斗者号</h3><p>坐底万米 · 深海探测进入"中国时代"</p></div></div>
             <div class="swiper-slide"><img src="swiper-imgs/fast_1.jpg" alt="中国天眼"><div class="wy-cap"><h3>中国天眼 FAST</h3><p>南仁东先生 22 年铸就的观天巨目</p></div></div>
+            <!-- 任务三①：第六件作品「爱达·魔都号」，首图由 AI 生成（横版 16:9） -->
+            <div class="swiper-slide"><img src="swiper-imgs/aidu_1.jpg" alt="爱达·魔都号"><div class="wy-cap"><h3>爱达·魔都号</h3><p>2024 年 1 月首航 · 首艘国产大型邮轮（首图 AI 生成）</p></div></div>
           </div>
           <div class="swiper-pagination" id="wyPag2"></div>
           <div class="swiper-button-prev" id="wyPrev2"></div>
@@ -183,6 +187,8 @@
             <div class="swiper-slide"><img src="swiper-imgs/c919_1.jpg" alt="C919大飞机"><div class="wy-cap"><h3>C919 大飞机</h3><p>蓝天之上 · 大国担当</p></div></div>
             <div class="swiper-slide"><img src="swiper-imgs/fendouzhe_1.jpg" alt="奋斗者号"><div class="wy-cap"><h3>奋斗者号</h3><p>万米深潜 · 无畏探索</p></div></div>
             <div class="swiper-slide"><img src="swiper-imgs/fast_1.jpg" alt="中国天眼"><div class="wy-cap"><h3>中国天眼 FAST</h3><p>仰望星空 · 脚踏实地</p></div></div>
+            <!-- 任务三①：第六件作品「爱达·魔都号」，首图由 AI 生成（横版 16:9） -->
+            <div class="swiper-slide"><img src="swiper-imgs/aidu_1.jpg" alt="爱达·魔都号"><div class="wy-cap"><h3>爱达·魔都号</h3><p>2024 年 1 月首航 · 首艘国产大型邮轮（首图 AI 生成）</p></div></div>
           </div>
           <div class="swiper-pagination" id="wyPag3"></div>
         </div>
@@ -197,6 +203,7 @@
       <h2>六种效果随心换<small>effect 参数 + 进阶：按钮实时切换</small></h2>
     </div>
     <p class="wy-txt">改一个 <code>effect</code> 参数，轮播立刻换一种"性格"：slide / fade / cube / coverflow / flip / cards。上面的 6 个按钮已经绑好了点击事件（读取 <code>btn.dataset.fx</code>），JS 还需要你补两段。</p>
+    <p class="wy-txt">🎯 <b>任务二拓展</b>：第 7 个按钮「creative 电影片」是课堂上<b>没讲过</b>的效果——由 AI 辅助阅读 Swiper 官网 creative 演示后实现：<b>上一张缩小左移带角度，下一张放大右移</b>，像电影选片墙。实现细节见 <a href="AI 协作作业/提示词记录.md">提示词记录</a>。</p>
     <div class="wy-req">
       <h3>✍️ 任务 4 要求</h3>
       <p><b>基础分</b>：初始化 <code>#wySw4</code>，实现循环 + 自动播放（3.2 秒）+ 圆点分页器（#wyPag4），初始效果为 <code>'slide'</code>，动画时长 800 毫秒。</p>
@@ -210,17 +217,22 @@
       <button data-fx="coverflow">coverflow 画廊堆叠（沉浸）</button>
       <button data-fx="flip">flip 翻页（复古）</button>
       <button data-fx="cards">cards 卡片（俏皮）</button>
+      <!-- 任务二：第 7 种效果 creative（课堂未讲，AI 辅助自学实现） -->
+      <button data-fx="creative">creative 电影片（AI 自学·第 7 种）</button>
     </div>
     <div class="wy-demo">
       <span class="wy-demo-tag">🎛️ 演示四 · 效果实验台（点按钮切换 effect）</span>
       <div class="wy-swiper">
         <div class="swiper" id="wySw4">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="swiper-imgs/tiangong_1.jpg" alt="天宫空间站"><div class="wy-cap"><h3>天宫空间站</h3><p>试试上面的效果按钮</p></div></div>
-            <div class="swiper-slide"><img src="swiper-imgs/fuxing_1.jpg" alt="复兴号动车组"><div class="wy-cap"><h3>复兴号动车组</h3><p>同一组照片，六种讲述方式</p></div></div>
-            <div class="swiper-slide"><img src="swiper-imgs/c919_1.jpg" alt="C919大飞机"><div class="wy-cap"><h3>C919 大飞机</h3><p>企业官网爱用 fade</p></div></div>
-            <div class="swiper-slide"><img src="swiper-imgs/fendouzhe_1.jpg" alt="奋斗者号"><div class="wy-cap"><h3>奋斗者号</h3><p>游戏网站爱用 cube</p></div></div>
-            <div class="swiper-slide"><img src="swiper-imgs/fast_1.jpg" alt="中国天眼"><div class="wy-cap"><h3>中国天眼 FAST</h3><p>相册页面爱用 coverflow</p></div></div>
+            <!-- 任务三②：zoom 双击缩放——img 必须包进 swiper-zoom-container，Swiper 才找得到缩放目标 -->
+            <div class="swiper-slide"><div class="swiper-zoom-container"><img src="swiper-imgs/tiangong_1.jpg" alt="天宫空间站"></div><div class="wy-cap"><h3>天宫空间站</h3><p>双击图片可放大看细节</p></div></div>
+            <div class="swiper-slide"><div class="swiper-zoom-container"><img src="swiper-imgs/fuxing_1.jpg" alt="复兴号动车组"></div><div class="wy-cap"><h3>复兴号动车组</h3><p>同一组照片，七种讲述方式</p></div></div>
+            <div class="swiper-slide"><div class="swiper-zoom-container"><img src="swiper-imgs/c919_1.jpg" alt="C919大飞机"></div><div class="wy-cap"><h3>C919 大飞机</h3><p>企业官网爱用 fade</p></div></div>
+            <div class="swiper-slide"><div class="swiper-zoom-container"><img src="swiper-imgs/fendouzhe_1.jpg" alt="奋斗者号"></div><div class="wy-cap"><h3>奋斗者号</h3><p>游戏网站爱用 cube</p></div></div>
+            <div class="swiper-slide"><div class="swiper-zoom-container"><img src="swiper-imgs/fast_1.jpg" alt="中国天眼"></div><div class="wy-cap"><h3>中国天眼 FAST</h3><p>相册页面爱用 coverflow</p></div></div>
+            <!-- 任务三①：第六件作品「爱达·魔都号」，首图由 AI 生成（横版 16:9） -->
+            <div class="swiper-slide"><div class="swiper-zoom-container"><img src="swiper-imgs/aidu_1.jpg" alt="爱达·魔都号"></div><div class="wy-cap"><h3>爱达·魔都号</h3><p>2024 年 1 月首航 · 首艘国产大型邮轮（首图 AI 生成）</p></div></div>
           </div>
           <div class="swiper-pagination" id="wyPag4"></div>
         </div>
@@ -228,7 +240,7 @@
     </div>
   </div>
 
-  <div class="wy-back"><a href="index.html">← 返回课堂实践中心</a>　<a href="swiper-lesson.html">查看教师讲解版 →</a></div>
+  <div class="wy-back"><a href="index.html">← 返回课堂实践中心</a>　<a href="AI 协作作业/index.html">📋 AI 协作作业（提示词记录） →</a>　<a href="swiper-lesson.html">查看教师讲解版 →</a></div>
 
   <footer>Swiper 课堂操作任务 · 大国重器光影展（学生版） · 高级网页设计 · 2026-2027-1</footer>
 </div>
@@ -270,8 +282,17 @@ var wySw3 = new Swiper("#wySw3", {
       },});
 
   // ── 任务 4：初始化 #wySw4，循环 + 3.2 秒自动播放 + 圆点 + 初始 effect ──
-  // TODO: 在这里写你的代码
+  // 任务三②：zoom 双击缩放（课堂未讲的 Swiper 能力）——
+  //   minRatio / maxRatio：缩放倍数下限与上限；双击 slide 放大到 maxRatio，再双击还原到 minRatio，
+  //   放大后按住拖动可平移看细节。img 必须包在 .swiper-zoom-container 里（见上方 HTML）
 var wySw4 = new Swiper("#wySw4", {
+      loop: true,                       // 无缝循环：最后一张继续往后翻会回到第一张
+      effect: 'slide',                  // 初始效果：平推（默认）
+      speed: 800,                       // 切换动画时长 800 毫秒
+      zoom: {                           // 任务三②：双击缩放
+        minRatio: 1,                    // 还原后的最小倍数（1 = 原尺寸）
+        maxRatio: 3,                    // 双击放大的最大倍数（3 倍）
+      },
       autoplay: {
         delay: 3200,
         disableOnInteraction: false,
@@ -297,10 +318,17 @@ var wySw4 = new Swiper("#wySw4", {
       wySw4.destroy(true, true);
 
       // TODO 3：用新 effect 重建实例（把其它配置原样保留）
-      wySw4 = new Swiper("#wySw4", {
+      // xfy_buildOpts：组装重建配置；若切换到 creative（任务二第 7 种效果），
+      // 追加 creativeEffect——prev/next 里的 transform 三项含义：
+      //   translate [x, y, z] 位移（百分比相对 slide 自身宽高）、rotate [x, y, z] 旋转角度、scale 缩放
+      var xfy_buildOpts = {
         effect: btn.dataset.fx,           // 读取按钮 data-fx 属性里存的效果名
         speed: 800,
         loop: true,
+        zoom: {                           // 任务三②：重建后双击缩放依然生效
+          minRatio: 1,
+          maxRatio: 3,
+        },
         autoplay: {
           delay: 3200,
           disableOnInteraction: false,
@@ -309,7 +337,16 @@ var wySw4 = new Swiper("#wySw4", {
           el: "#wyPag4",
           clickable: true,
         },
-      });
+      };
+      // 任务二：creative「电影片」——上一张缩小左移带角度，下一张放大右移
+      if (btn.dataset.fx === 'creative') {
+        xfy_buildOpts.creativeEffect = {
+          limitProgress: 1,               // 只渲染相邻 1 张，保持画面干净
+          prev: { translate: ['-110%', 0, 0], rotate: [0, 0, -5], scale: 0.8 },  // 上一张：左移出画、逆时针 5 度、缩到 0.8
+          next: { translate: ['110%', 0, 0],  rotate: [0, 0, 5],  scale: 1.05 }, // 下一张：右移入画、顺时针 5 度、放大到 1.05
+        };
+      }
+      wySw4 = new Swiper("#wySw4", xfy_buildOpts);
     });
   });
 </script>
